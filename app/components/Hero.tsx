@@ -1,11 +1,11 @@
 'use client'
-import React, { useRef } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 // Define the Hero component
 const Hero = () => {
     // Create a ref for the CTA component
-    const ctaRef = useRef(null);
+
 
     // Function to scroll to the CTA component
    
@@ -39,8 +39,7 @@ const Hero = () => {
             >
                 Get Started
             </motion.button>
-            {/* Hidden anchor element for smooth scrolling */}
-            <a ref={ctaRef}></a>
+           
         </div>
     );
 };
