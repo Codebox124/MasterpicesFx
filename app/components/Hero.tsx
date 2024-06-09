@@ -8,10 +8,7 @@ const Hero = () => {
     const ctaRef = useRef(null);
 
     // Function to scroll to the CTA component
-    const scrollToCTA = () => {
-        ctaRef.current.scrollIntoView({ behavior: 'smooth' });
-    };
-
+   
     return (
         <div className="relative bg-gradient-to-r from-blue-500 to-purple-600 bg-cover bg-center text-white py-40 text-center flex flex-col items-center justify-center min-h-screen">
             {/* Gradient Overlay */}
@@ -38,7 +35,7 @@ const Hero = () => {
                 className="mt-6 md:mt-8 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded relative z-10"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                onClick={scrollToCTA}
+              
             >
                 Get Started
             </motion.button>
