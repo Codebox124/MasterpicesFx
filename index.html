@@ -7,90 +7,99 @@
     <title>Masterpiece FX</title>
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Include AOS for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
-<body>
+<body class="bg-gray-100">
 
-    <div
-        class="relative bg-gradient-to-r from-blue-500 to-purple-600 bg-cover bg-center text-white py-40 text-center flex flex-col items-center justify-center min-h-screen">
+    <div class="relative bg-gradient-to-r from-green-200 to-green-600 text-white py-40 text-center flex flex-col items-center justify-center min-h-screen">
         <!-- Gradient Overlay -->
         <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-75"></div>
         <!-- Content -->
-        <h1 class="text-5xl md:text-6xl font-bold relative z-10">
+        <h1 class="text-5xl md:text-6xl font-bold relative z-10" data-aos="fade-down">
             Experience Masterpiece FX
         </h1>
-        <p class="text-2xl mt-4 md:mt-6 md:text-3xl relative z-10">
+        <p class="text-2xl mt-4 md:mt-6 md:text-3xl relative z-10" data-aos="fade-up">
             Transform your trading with advanced forex tools.
         </p>
-        <!-- Button -->
-        <button
-            class="mt-6 md:mt-8 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded relative z-10">
-            Get Started
-        </button>
+        <!-- Buttons -->
+        <div class="flex space-x-4 mt-6 md:mt-8 relative z-10" data-aos="fade-up">
+          
+            <a href="https://chat.whatsapp.com/CZArIukdhhJI6StWYZAng4" target="_blank" rel="noopener noreferrer">
+                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                    <i class="fa fa-whatsapp mr-2"></i> Whatsapp
+                </button>
+            </a>
+            <a href="https://t.me/masterpieceforx" target="_blank" rel="noopener noreferrer">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <i class="fa fa-telegram mr-2"></i> Telegram
+                </button>
+            </a>
+        </div>
     </div>
 
-    <div class="py-20 text-center px-3 bg-gradient-to-r from-blue-500 to-purple-600">
-        <h2 class="text-3xl font-bold text-white">Features</h2>
-        <div class="mt-6 grid grid-cols-1 text-blue-500 gap-8 md:grid-cols-3">
-            <div class="feature-item bg-white p-6 rounded-lg shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto text-4xl text-green-500" viewBox="0 0 24 24"
-                    width="48" height="48">
-                    <path fill="currentColor"
-                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12c6.627 0 12-5.373 12-12s-5.373-12-12-12zm0 22.055c-5.284 0-9.547-4.263-9.547-9.548s4.263-9.547 9.547-9.547c5.284 0 9.548 4.263 9.548 9.547s-4.263 9.548-9.548 9.548zm0-17.323c-4.442 0-8.055 3.612-8.055 8.055s3.612 8.055 8.055 8.055c4.442 0 8.055-3.612 8.055-8.055s-3.612-8.055-8.055-8.055zm.189 11.278v-8.908c0-.216-.175-.392-.392-.392s-.393.175-.393.392v8.908c0 .217.176.392.393.392s.392-.175.392-.392zm-1.244-4.111l-1.646-1.49c-.153-.14-.393-.126-.532.027-.14.153-.126.392.027.532l1.253 1.135v3.934c0 .217.175.392.392.392s.393-.175.393-.392v-3.934l1.253-1.135c.153-.14.177-.38.027-.532-.141-.153-.38-.176-.533-.027z">
-                    </path>
-                </svg>
+    <div class="py-20 text-center px-3 text-slate-600 bg-gradient-to-r from-teal-500 to-indigo-600">
+        <h2 class="text-3xl font-bold " data-aos="fade-up">Features</h2>
+        <div class="mt-6 grid grid-cols-1 text-indigo-600 gap-8 md:grid-cols-3">
+            <div class="feature-item bg-white p-6 items-center flex flex-col justify-center rounded-lg shadow-lg" data-aos="zoom-in">
+                <i class="fa fa-chart-line text-4xl text-green-500 mx-auto"></i>
                 <p class="mt-2 text-lg">Detailed Analytics</p>
             </div>
-            <div class="feature-item bg-white p-6 rounded-lg shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto text-4xl text-green-500" viewBox="0 0 24 24"
-                    width="48" height="48">
-                    <path fill="currentColor"
-                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12c6.627 0 12-5.373 12-12s-5.373-12-12-12zm
-                0 22.055c-5.284 0-9.547-4.263-9.547-9.548s4.263-9.547 9.547-9.547c5.284 0 9.548 4.263 9.548 9.547s-4.263 9.548-9.548 9.548zm0-17.323c-4.442 0-8.055 3.612-8.055 8.055s3.612 8.055 8.055 8.055c4.442 0 8.055-3.612 8.055-8.055s-3.612-8.055-8.055-8.055zm.189 11.278v-8.908c0-.216-.175-.392-.392-.392s-.393.175-.393.392v8.908c0 .217.176.392.393.392s.392-.175.392-.392zm-1.244-4.111l-1.646-1.49c-.153-.14-.393-.126-.532.027-.14.153-.126.392.027.532l1.253 1.135v3.934c0 .217.175.392.392.392s.393-.175.393-.392v-3.934l1.253-1.135c.153-.14.177-.38.027-.532-.141-.153-.38-.176-.533-.027z">
-                    </path>
-                </svg>
+            <div class="feature-item bg-white p-6 items-center flex flex-col justify-center rounded-lg shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fa fa-user-friends text-4xl text-green-500 mx-auto"></i>
                 <p class="mt-2 text-lg">User-friendly Interface</p>
             </div>
-            <div class="feature-item bg-white p-6 rounded-lg shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto text-4xl text-green-500" viewBox="0 0 24 24"
-                    width="48" height="48">
-                    <path fill="currentColor"
-                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12c6.627 0 12-5.373 12-12s-5.373-12-12-12zm0 22.055c-5.284 0-9.547-4.263-9.547-9.548s4.263-9.547 9.547-9.547c5.284 0 9.548 4.263 9.548 9.547s-4.263 9.548-9.548 9.548zm0-17.323c-4.442 0-8.055 3.612-8.055 8.055s3.612 8.055 8.055 8.055c4.442 0 8.055-3.612 8.055-8.055s-3.612-8.055-8.055-8.055zm.189 11.278v-8.908c0-.216-.175-.392-.392-.392s-.393.175-.393.392v8.908c0 .217.176.392.393.392s.392-.175.392-.392zm-1.244-4.111l-1.646-1.49c-.153-.14-.393-.126-.532.027-.14.153-.126.392.027.532l1.253 1.135v3.934c0 .217.175.392.392.392s.393-.175.393-.392v-3.934l1.253-1.135c.153-.14.177-.38.027-.532-.141-.153-.38-.176-.533-.027z">
-                    </path>
-                </svg>
+            <div class="feature-item bg-white p-6 items-center flex flex-col justify-center rounded-lg shadow-lg" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fa fa-headset text-4xl text-green-500 mx-auto"></i>
                 <p class="mt-2 text-lg">24/7 Support</p>
             </div>
         </div>
     </div>
 
-    <div class="py-20 text-center  bg-gradient-to-r from-blue-500 to-purple-600">
-        <h2 class="text-3xl font-bold">What Our Users Say</h2>
+    <div class="py-20 text-center bg-gradient-to-r from-teal-500 to-indigo-600">
+        <h2 class="text-3xl font-bold" data-aos="fade-up">What Our Users Say</h2>
         <div class="mt-6 space-y-4">
             <!-- Testimonials -->
             <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-                <p>"Masterpiece FX has revolutionized my trading experience!"</p>
-                <p class="mt-2 font-semibold">- Raji Roqeeb</p>
+                <p class="">"Masterpiece FX has revolutionized my trading experience!"</p>
+                <p class="mt-2 font-semibold ">- Raji Roqeeb</p>
             </div>
             <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
-                <p>"The analytics are incredibly detailed and easy to understand."</p>
-                <p class="mt-2 font-semibold">- Smith</p>
+                <p class="">"The analytics are incredibly detailed and easy to understand."</p>
+                <p class="mt-2 font-semibold ">- Smith</p>
             </div>
             <div class="testimonial-item" data-aos="fade-up" data-aos-delay="700">
-                <p>"Their support is top-notch and always available."</p>
-                <p class="mt-2 font-semibold">- David</p>
+                <p class="">"Their support is top-notch and always available."</p>
+                <p class="mt-2 font-semibold ">- David</p>
             </div>
         </div>
     </div>
 
-    <div class="py-20 text-center">
+    <div class="py-20 text-center bg-white">
         <!-- CTA -->
-        <h2 class="text-3xl font-bold">Join Us Today</h2>
-        <a href="https://chat.whatsapp.com/CZArIukdhhJI6StWYZAng4" target="_blank" rel="noopener noreferrer">
-            <button class="mt-6 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                Whatsapp
-            </button>
-        </a>
+        <h2 class="text-3xl font-bold text-indigo-600" data-aos="fade-up">Join Us Today</h2>
+        <div class="flex justify-center space-x-4 mt-6" data-aos="" data-aos-delay="200">
+            <a href="https://chat.whatsapp.com/CZArIukdhhJI6StWYZAng4" target="_blank" rel="noopener noreferrer">
+                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                    <i class="fa fa-whatsapp mr-2"></i> Whatsapp
+                </button>
+            </a>
+            <a href="https://t.me/masterpieceforx" target="_blank" rel="noopener noreferrer">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <i class="fa fa-telegram mr-2"></i> Telegram
+                </button>
+            </a>
+        </div>
     </div>
+
+    <!-- Include AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
